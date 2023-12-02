@@ -6,3 +6,6 @@ while(i<10):
         continue
     print(i)
     
+    if i%2==0:
+        print("even number")
+        
