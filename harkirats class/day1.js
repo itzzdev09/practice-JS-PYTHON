@@ -54,22 +54,36 @@
 // }
 
 
-const person1 = "dev"
-const gender1 = "male"
+// const person1 = "dev"
+// const gender1 = "male"
 
-const person2 = "Tesla"
-const gender2 = "male"
+// const person2 = "Tesla"
+// const gender2 = "male"
 
-const person3 = "devi"
-const gender3 = "female"
+// const person3 = "devi"
+// const gender3 = "female"
 
-const person4 = "dev"
-const gender4 = "male"
+// const person4 = "dev"
+// const gender4 = "male"
 
 
-or 
+// or 
 
 const allusers = [{
     firstname: "devraj",
     gender: "male" 
+},{
+    firstname: "raman",
+    gender: "male",
+    metadata: {
+        age: 21,
+        address: ""
+}}, {
+    firstname: "mohini",
+    gender: "female"
 }]
+for(let i = 0; i < allusers.length; i++){
+    if(allusers[i] ["gender" ] == "male"){
+        console.log(allusers[i] ["firstname"])
+}
+}
