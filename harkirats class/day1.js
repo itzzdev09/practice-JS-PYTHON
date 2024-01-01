@@ -69,21 +69,23 @@
 
 // or 
 
-const allusers = [{
-    firstname: "devraj",
-    gender: "male" 
-},{
-    firstname: "raman",
-    gender: "male",
-    metadata: {
-        age: 21,
-        address: ""
-}}, {
-    firstname: "mohini",
-    gender: "female"
-}]
-for(let i = 0; i < allusers.length; i++){
-    if(allusers[i] ["gender" ] == "male"){
-        console.log(allusers[i] ["firstname"])
-}
-}
+// const allusers = [{
+//     firstname: "devraj",
+//     gender: "male" 
+// },{
+//     firstname: "raman",
+//     gender: "male",
+//     metadata: {
+//         age: 21,
+//         address: ""
+// }}, {
+//     firstname: "mohini",
+//     gender: "female"
+// }]
+// for(let i = 0; i < allusers.length; i++){
+//     if(allusers[i] ["gender" ] == "male"){
+//         console.log(allusers[i] ["firstname"])
+// }
+// }
+
+
