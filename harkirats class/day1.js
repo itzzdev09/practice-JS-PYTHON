@@ -147,3 +147,30 @@ function getLength(str) {
       }
       replaceString("Hello World", "World", "JavaScript");
       
+      // split
+      function splitString(str, separator) {
+        console.log("Original String:", str);
+        console.log("After split:", str.split(separator));
+      }
+      splitString("Hello World", " ");
+      
+      // trim
+      function trimString(str) {
+        console.log("Original String:", str);
+        console.log("After trim:", str.trim());
+      }
+      trimString(" Hello World ");
+      
+      // toUpperCase
+      function toUpper(str) {
+        console.log("Original String:", str);
+        console.log("After toUpperCase:", str.toUpperCase());
+      }
+      toUpper("Hello World");
+      
+      // toLowerCase
+      function toLower(str) {
+        console.log("Original String:", str);
+        console.log("After toLowerCase:", str.toLowerCase());
+      }
+      toLower("Hello World");
