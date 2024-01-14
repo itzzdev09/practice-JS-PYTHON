@@ -89,12 +89,33 @@
 // }
 
 
-function adds(n){
-    let result = 0;
-    for(let i = 1;i < n; i++){
-        result += i }
-    return result;
-}
-let result = adds(100)
-console.log(result);
+// function adds(n){
+//     let result = 0;
+//     for(let i = 1;i < n; i++){
+//         result += i }
+//     return result;
+// }
+// let result = adds(100)
+// console.log(result);
 
+// String handbook
+
+// String: length, indexOf(), lastIndexOf(), slice(), substring(), replace(),
+// split(), trim(), toUpperCase(), toLowerCase(), etc.
+
+// Run each function to see the output, play and learn by doing.
+
+// Length
+function getLength(str) {
+    console.log("Original String:", str);
+    console.log("Length:", str.length);
+  }
+  getLength("Hello World");
+  
+    // indexOf
+    function findIndexOf(str, target) {
+        console.log("Original String:", str);
+        console.log("Index:", str.indexOf(target));
+      }
+      findIndexOf("Hello World", "World");
+      
