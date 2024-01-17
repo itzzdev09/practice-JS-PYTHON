@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even Checker</title>
+</head>
+<body>
+
+<script>
+    // Function to check if a number is odd or even
+    function checkOddEven() {
+        // Prompt user for input
+        let userInput = prompt("Enter a number:");
+
+        // Parse the user input as an integer
+        let number = parseInt(userInput);
+
+        // Check if the input is a valid number
+        if (!isNaN(number)) {
+            // Determine if the number is odd or even
+            if (number % 2 === 0) {
+                alert(number + " is an even number.");
+            } else {
+                alert(number + " is an odd number.");
+            }
+        } else {
+            alert("Invalid input. Please enter a valid number.");
+        }
+    }
+
+    // Call the function when the page loads (for testing)
+    // Remove this line if you want to trigger the function in response to an event (e.g., button click)
+    checkOddEven();
+</script>
+
+</body>
+</html>
