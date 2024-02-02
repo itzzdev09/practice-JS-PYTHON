@@ -8,3 +8,10 @@ asyncOperation1((result1) => {
     });
   });
   
+  // With Promises
+  asyncOperation1()
+    .then((result1) => asyncOperation2(result1))
+    .then((result2) => asyncOperation3(result2))
+    .then((result3) => {
+    });
+  
