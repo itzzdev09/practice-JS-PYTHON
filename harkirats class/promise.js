@@ -15,3 +15,9 @@ asyncOperation1((result1) => {
     .then((result3) => {
     });
   
+    asyncOperation1()
+  .then((result1) => asyncOperation2(result1))
+  .then((result2) => asyncOperation3(result2))
+  .catch((error) => {
+    console.error('An error occurred:', error);
+  });
