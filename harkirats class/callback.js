@@ -28,3 +28,21 @@ function fetchData(callback) {
       console.log('Callback Example - Data:', data);
     }
   });
+
+
+
+  //  Callback usage
+function fetchData(callback) {
+  setTimeout(function() {
+    const data = 'Fetched data from the server';
+    callback(null, data);
+  }, 2000);
+}
+function processData(error, data) {
+  if (error) {
+    console.error('Error:', error);
+  } else {
+    console.log('Data Processing: ', data);
+  }
+}
+fetchData(processData);
