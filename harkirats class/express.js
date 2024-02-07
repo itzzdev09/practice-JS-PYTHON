@@ -15,4 +15,7 @@ app.get('/api', (req, res) => {
     const { name } = req.params;
     res.send(`Hello, ${name}!`);
   });
- 
+  const PORT = 3000;
+  app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+  });
