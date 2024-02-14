@@ -18,3 +18,19 @@ app.get('/', (req, res) => {
     console.log(`Server is running on http://localhost:${port}`);
   });
   
+
+
+  // fetch
+fetch('<https://api.example.com/data>')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Data from server:', data);
+  })
+  .catch(error => {
+    console.error('Fetch error:', error);
+  });
