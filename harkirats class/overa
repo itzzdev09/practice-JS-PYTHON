@@ -1,0 +1,16 @@
+function fetchData(callback) {
+  setTimeout(() => {
+    const data = 'Hello, Callback!';
+    callback(data);
+  }, 1000);
+}
+
+function fetchDataPromise() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      const data = 'Hello, Promise!';
+      resolve(data);
+    }, 1000);
+  });
+}
+
