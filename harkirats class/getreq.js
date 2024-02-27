@@ -34,3 +34,15 @@ fetch('<https://api.example.com/data>')
   .catch(error => {
     console.error('Fetch error:', error);
   });
+
+
+  // axios
+  const axios = require('axios');
+
+const url = '<https://api.example.com/resource>';
+const token = 'your-access-token';
+
+axios.get(url, {
+  headers: {
+    'Authorization': `Bearer ${token}`
+  }
